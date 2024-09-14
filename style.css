@@ -1,0 +1,289 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.navbar nav {
+    display: inline-block;
+    float: right;
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.navbar nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: #eee;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Educational Background */
+.edu-bg {
+    background: #eee;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.edu-bg h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.edu-bg h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.edu-bg p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.edu-bg .btn {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.edu-bg .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Skills & Interests Section */
+.skills-intersts {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-interests h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    text-align: center;
+}
+
+.skills-list, .interests-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li, .interests-list li  {
+    margin: 8px;
+    padding: 10px;
+    font-size: 18px;
+    color: #555;
+    flex: 1 1 250px;
+    box-sizing: border-box;
+    border: 1px solid#ddd;
+}
+
+.skills-list li:hover, .interests-list li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.contact .btn {
+    background-color: #444;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.contact .btn:hover {
+    background-color: #232ba1;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul {
+        margin-top: 10px;
+    }
+
+    .navbar nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .edu-bg h2 {
+        font-size: 30px;
+    }
+
+    .edu-bg h3 {
+        font-size: 24px;
+    }
+
+    .edu-bg p {
+        font-size: 16px;
+    }
+
+    .skills h2 {
+        font-size: 30px;
+    }
+
+    .skills-list li {
+        font-size: 16px;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .contact .btn {
+        font-size: 16px;
+    }
+}
